@@ -1,98 +1,431 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Romain Fabrègue</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Romain Fabrègue — Portfolio</title>
+<meta name="description" content="Portfolio de Romain Fabrègue — automatique, systèmes embarqués et ingénierie aérospatiale.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <nav>
-        <a href="#" class="logo">Romain Fabrègue</a>
-
-        <div class="nav-links">
-            <a href="#projects">Projets</a>
-            <a href="#about">À propos</a>
-            <a href="https://github.com/Romd1">GitHub</a>
-        </div>
-    </nav>
+  <nav>
+    <a href="#" class="logo"><span class="dot"></span>Romain Fabrègue</a>
+    <div class="nav-links">
+      <a href="#projects">Projets</a>
+      <a href="#about">À propos</a>
+      <a href="https://github.com/Romd1" class="ext">GitHub</a>
+    </div>
+  </nav>
 </header>
 
 <main>
 
-    <section class="hero">
-        <p class="eyebrow">PORTFOLIO</p>
-        <h1>Mes projets,<br>recherches et travaux.</h1>
-        <p class="intro">
-            Une collection de mes projets techniques, rapports,
-            analyses et expérimentations.
-        </p>
-    </section>
+  <section class="hero">
+    <svg class="orbit-field" viewBox="0 0 600 600" aria-hidden="true">
+      <ellipse cx="300" cy="300" rx="260" ry="150" fill="none" stroke="#f2a93b" stroke-opacity="0.18" stroke-width="1" transform="rotate(-18 300 300)"/>
+      <ellipse cx="300" cy="300" rx="190" ry="105" fill="none" stroke="#233150" stroke-width="1" transform="rotate(-18 300 300)"/>
+      <ellipse cx="300" cy="300" rx="120" ry="62" fill="none" stroke="#233150" stroke-width="1" transform="rotate(-18 300 300)"/>
+      <circle cx="300" cy="300" r="3" fill="#f2a93b" fill-opacity="0.6"/>
+      <circle cx="527" cy="220" r="4" fill="#f2a93b"/>
+    </svg>
 
-    <section id="projects">
-        <div class="section-header">
-            <p class="eyebrow">PROJETS</p>
-            <h2>Travaux sélectionnés</h2>
+    <div class="hero-inner">
+      <h1>Concevoir, modéliser,<br>faire voler des <em>systèmes</em>.</h1>
+      <p class="intro">
+        Une collection de mes projets, recherches et travaux en automatique,
+        systèmes embarqués et ingénierie aérospatiale.
+      </p>
+
+      <div class="telemetry">
+        <div class="telemetry-item">
+          <div class="k">FORMATION ACTUELLE</div>
+          <div class="v">M.Sc. Aerospace Eng. — Concordia</div>
         </div>
-
-        <div class="projects">
-
-            <a href="https://github.com/Romd1/Astrodynamics"
-               class="project">
-                <span class="project-number">01</span>
-                <div>
-                    <h3>Machine Learning</h3>
-                    <p>
-                        Description courte du projet et de ce qui
-                        a été réalisé.
-                    </p>
-                </div>
-                <span class="arrow">↗</span>
-            </a>
-
-            <a href="https://github.com/TON_USERNAME/project-data-analysis"
-               class="project">
-                <span class="project-number">02</span>
-                <div>
-                    <h3>Data Analysis</h3>
-                    <p>
-                        Analyse de données, visualisations et résultats.
-                    </p>
-                </div>
-                <span class="arrow">↗</span>
-            </a>
-
-            <a href="https://github.com/TON_USERNAME/project-robotics"
-               class="project">
-                <span class="project-number">03</span>
-                <div>
-                    <h3>Robotics</h3>
-                    <p>
-                        Projet de robotique, conception et développement.
-                    </p>
-                </div>
-                <span class="arrow">↗</span>
-            </a>
-
+        <div class="telemetry-item">
+          <div class="k">FORMATION PRÉCÉDENTE</div>
+          <div class="v">Diplôme d'ingénieur — IMT Atlantique</div>
         </div>
-    </section>
+        <div class="telemetry-item">
+          <div class="k">DOMAINE</div>
+          <div class="v">Automatique & systèmes aérospatiaux</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="about">
-        <p class="eyebrow">À PROPOS</p>
-        <h2>Mon parcours</h2>
-        <p>
-            Quelques lignes sur toi, ton domaine d'études,
-            tes intérêts techniques et tes objectifs.
-        </p>
-    </section>
+  <section id="projects">
+    <div class="section-head">
+      <h2>Travaux sélectionnés</h2>
+      <p class="section-note">Trois projets représentatifs, hébergés sur GitHub.</p>
+    </div>
+
+    <div class="manifest">
+      <a href="https://github.com/Romd1/Astrodynamics" class="m-row">
+        <span class="m-idx">01</span>
+        <div>
+          <div class="m-title">Astrodynamics</div>
+          <p class="m-desc">Création d'un outil Python de calculs astrodynamiques, de simulation et d'affichage.</p>
+          <span class="m-tag">github.com/Romd1</span>
+        </div>
+        <span class="m-arrow">↗</span>
+      </a>
+
+      <a href="https://github.com/TON_USERNAME/project-data-analysis" class="m-row placeholder">
+        <span class="m-idx">02</span>
+        <div>
+          <div class="m-title">Data Analysis</div>
+          <p class="m-desc">Analyse de données, visualisations et résultats.</p>
+          <span class="m-tag">lien à mettre à jour</span>
+        </div>
+        <span class="m-arrow">↗</span>
+      </a>
+
+      <a href="https://github.com/TON_USERNAME/project-robotics" class="m-row placeholder">
+        <span class="m-idx">03</span>
+        <div>
+          <div class="m-title">Robotics</div>
+          <p class="m-desc">Projet de robotique, conception et développement.</p>
+          <span class="m-tag">lien à mettre à jour</span>
+        </div>
+        <span class="m-arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-head">
+      <h2>Mon parcours</h2>
+    </div>
+
+    <div class="about-intro">
+      <p>
+        Étudiant ingénieur à <strong>IMT Atlantique</strong>, spécialisé en
+        <strong>automatique et systèmes</strong>, je poursuis actuellement un
+        <strong>Master of Aerospace Engineering à Concordia University</strong>,
+        au Canada.
+      </p>
+      <p>
+        Mon parcours se situe à l'intersection de l'<strong>automatique</strong>,
+        des <strong>systèmes embarqués</strong>, de la <strong>robotique</strong>
+        et de l'<strong>ingénierie aérospatiale</strong>. J'aime concevoir,
+        modéliser et expérimenter des systèmes complexes, de la définition du
+        besoin jusqu'à leur implémentation et leur validation.
+      </p>
+    </div>
+
+    <div class="pillars">
+      <article class="pillar">
+        <span class="ref">01</span>
+        <h4>Automatique & systèmes</h4>
+        <p>Modélisation, analyse et commande des systèmes dynamiques : identification et estimation, commande robuste, systèmes mécatroniques et systèmes temps réel.</p>
+      </article>
+      <article class="pillar">
+        <span class="ref">02</span>
+        <h4>Aéronautique & spatial</h4>
+        <p>Systèmes de contrôle de vol, systèmes spatiaux, structures aéronautiques, avionique et systèmes aérospatiaux.</p>
+      </article>
+      <article class="pillar">
+        <span class="ref">03</span>
+        <h4>Systèmes embarqués</h4>
+        <p>Architectures embarquées en C/C++, STM32, FPGA, Linux embarqué et divers protocoles de communication, avec une attention portée au contrôle temps réel.</p>
+      </article>
+      <article class="pillar">
+        <span class="ref">04</span>
+        <h4>Conception & prototypage</h4>
+        <p>Conception mécanique, modélisation 3D, éléments finis, optimisation topologique, prototypage rapide et fabrication additive.</p>
+      </article>
+    </div>
+
+    <div class="about-section">
+      <h3 class="sub-head">Un parcours orienté systèmes et aérospatial</h3>
+      <p class="sub-lede">FORMATION</p>
+
+      <div class="timeline">
+        <div class="t-row">
+          <span class="t-date">2025 — 2027</span>
+          <div>
+            <h4>Master of Aerospace Engineering</h4>
+            <p class="t-inst">Concordia University — Montréal</p>
+            <p>Second diplôme de master, orienté vers l'ingénierie aérospatiale : contrôle de vol, navigation avionique, robotique, microprocesseurs, astrodynamique, systèmes spatiaux, CAM.</p>
+          </div>
+        </div>
+        <div class="t-row">
+          <span class="t-date">2023 — 2026</span>
+          <div>
+            <h4>Diplôme d'ingénieur — Automatique et systèmes cyber-physiques</h4>
+            <p class="t-inst">IMT Atlantique — Nantes</p>
+            <p>Formation généraliste en ingénierie des systèmes, avec une spécialisation progressive en automatique avancée, systèmes embarqués et modélisation des systèmes cyber-physiques.</p>
+          </div>
+        </div>
+        <div class="t-row">
+          <span class="t-date">2021 — 2023</span>
+          <div>
+            <h4>Classes préparatoires (CPGE)</h4>
+            <p class="t-inst">La Martinière Montplaisir — Lyon</p>
+            <p>Programme intensif de deux ans en mathématiques, physique et sciences de l'ingénieur, préparant aux concours des grandes écoles. Développement de compétences analytiques, de résolution de problèmes et de gestion du temps.</p>
+          </div>
+        </div>
+        <div class="t-row">
+          <span class="t-date">2021</span>
+          <div>
+            <h4>Baccalauréat général — mention Très Bien</h4>
+            <p class="t-inst">Lycée Algoud-Laffemas — Valence</p>
+            <p>Spécialité mathématiques et physique, option sciences de l'ingénieur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h3 class="sub-head">Recherche en modélisation thermique</h3>
+      <p class="sub-lede">EXPÉRIENCE PROFESSIONNELLE</p>
+
+      <div class="timeline">
+        <div class="t-row">
+          <span class="t-date">Avr. — Août 2025</span>
+          <div>
+            <h4>Stagiaire de recherche</h4>
+            <p class="t-inst">LS2N — Laboratoire des Sciences du Numérique, Nantes</p>
+            <p>Recherche sur la modélisation et la régulation thermique des bâtiments, à partir de l'identification de systèmes dynamiques linéaires sur données de simulation. Développement de modèles réduits prédisant la surchauffe estivale, avec un temps de simulation inférieur à 10 secondes sur un ordinateur standard. Application de techniques d'automatique et d'identification de systèmes, en collaboration avec l'équipe de recherche pour la validation des modèles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h3 class="sub-head">Les domaines que j'explore</h3>
+      <p class="sub-lede">ENSEIGNEMENTS</p>
+      <div class="chips">
+        <span class="chip">Flight Control Systems</span>
+        <span class="chip">Identification & estimation</span>
+        <span class="chip">Commande robuste</span>
+        <span class="chip">Systèmes spatiaux</span>
+        <span class="chip">Microprocesseurs & systèmes embarqués</span>
+        <span class="chip">Systèmes temps réel</span>
+        <span class="chip">Robotique</span>
+        <span class="chip">Modélisation & simulation</span>
+        <span class="chip">C / C++</span>
+        <span class="chip">Conception mécanique</span>
+        <span class="chip">Structures aéronautiques</span>
+        <span class="chip">Computer-Aided Design</span>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h3 class="sub-head">Apprendre par la réalisation</h3>
+      <p class="sub-lede">PROJETS</p>
+
+      <div class="card-grid">
+        <article class="pcard">
+          <span class="tag">SPACE</span>
+          <h4>ADCS — CUBICS</h4>
+          <p>Contribution au développement du système de détermination et contrôle d'attitude d'un satellite au sein de <strong>Space Concordia</strong>. Travail sur la modélisation, l'estimation d'attitude, les capteurs et les lois de contrôle, notamment avec des filtres de Kalman sous MATLAB.</p>
+        </article>
+        <article class="pcard">
+          <span class="tag">AEROSPACE</span>
+          <h4>Analyse structurelle d'une aile</h4>
+          <p>Analyse statique et dimensionnement d'une structure aéronautique dans le cadre d'un projet réalisé avec <strong>Bombardier Aerospace</strong>. Utilisation de méthodes par éléments finis et d'analyses de sensibilité pour guider les choix de conception.</p>
+        </article>
+        <article class="pcard">
+          <span class="tag">UAV</span>
+          <h4>Optimisation d'un train d'atterrissage</h4>
+          <p>Conception et optimisation topologique d'un train d'atterrissage pour UAV afin de réduire la masse tout en conservant les performances mécaniques et la résistance de la structure.</p>
+        </article>
+        <article class="pcard">
+          <span class="tag">CONTROL</span>
+          <h4>Contrôle de vol</h4>
+          <p>Modélisation dynamique d'un aéronef et conception de correcteurs pour un système de contrôle de vol. Analyse et validation des performances avec MATLAB et Simulink.</p>
+        </article>
+        <article class="pcard">
+          <span class="tag">EMBEDDED</span>
+          <h4>Suivi de cible sur STM32</h4>
+          <p>Développement d'un système de suivi de balle par caméra motorisée. Détection de la cible, traitement embarqué, commande des actionneurs et implémentation d'une boucle de contrôle en C sur STM32.</p>
+        </article>
+        <article class="pcard">
+          <span class="tag">FPGA</span>
+          <h4>Contrôle de position sur FPGA</h4>
+          <p>Développement d'un système embarqué de contrôle de position linéaire combinant FPGA, Linux embarqué et C. Mise en œuvre d'une boucle de contrôle temps réel et communication entre les composants du système.</p>
+        </article>
+        <article class="pcard">
+          <span class="tag">ROBOTICS</span>
+          <h4>Robot mobile autonome</h4>
+          <p>Conception en C++ d'un système de contrôle pour robot mobile de livraison autonome, avec génération de trajectoires, localisation, navigation et intégration des capteurs et actionneurs.</p>
+        </article>
+        <article class="pcard">
+          <span class="tag">SPACE</span>
+          <h4>Ballon sonde — SpaceCraft'IMT</h4>
+          <p>Participation à la conception et au développement d'un ballon sonde : analyse des exigences, sélection des capteurs et développement d'un système de régulation thermique adapté aux conditions de haute altitude.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h3 class="sub-head">Rôles associatifs & recherche</h3>
+      <p class="sub-lede">ENGAGEMENTS</p>
+
+      <div class="timeline">
+        <div class="t-row">
+          <span class="t-date">2026 — 2027</span>
+          <div>
+            <h4>Consultant technique, ADCS</h4>
+            <p class="t-inst">Space Concordia — Initiative CUBICS</p>
+            <p>Contrôle d'attitude de satellite, intégration de capteurs, appui aux algorithmes de contrôle.</p>
+          </div>
+        </div>
+        <div class="t-row">
+          <span class="t-date">Sept. 2024 — Avr. 2025</span>
+          <div>
+            <h4>Responsable automatisation</h4>
+            <p class="t-inst">Aerospace Club — IMT Atlantique, Nantes</p>
+            <p>Pilotage du volet automatisation du club durant l'année 2024-2025 : conception du système de contrôle d'un projet CubeSat (Arduino, C++, PID).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h3 class="sub-head">Publication</h3>
+      <div class="pub-panel">
+        <p class="pub-status">En cours de relecture — Article IBPSA</p>
+        <p class="pub-citation">Illy, H.; Chevrel, P.; Alessandrini, J.-M.; Nogueira, R. A.; <strong>Fabregue, R.</strong> (2026). Caractérisation du comportement thermique estival des bâtiments utilisant modèles quasi-linéaires point à point : potentiel et limites.</p>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h3 class="sub-head">Du modèle au système réel</h3>
+      <p class="sub-lede">UNE APPROCHE TRANSVERSALE</p>
+
+      <div class="pipeline">
+        <div class="p-step"><span class="p-dot"></span><span class="p-label">Analyse du besoin</span></div>
+        <div class="p-step"><span class="p-dot"></span><span class="p-label">Modélisation</span></div>
+        <div class="p-step"><span class="p-dot"></span><span class="p-label">Conception</span></div>
+        <div class="p-step"><span class="p-dot"></span><span class="p-label">Implémentation</span></div>
+        <div class="p-step"><span class="p-dot"></span><span class="p-label">Simulation</span></div>
+        <div class="p-step"><span class="p-dot"></span><span class="p-label">Prototypage</span></div>
+        <div class="p-step"><span class="p-dot"></span><span class="p-label">Validation</span></div>
+      </div>
+
+      <div class="approach-copy">
+        <p>Mes expériences m'ont progressivement amené à travailler sur l'ensemble de la chaîne de développement d'un système, de l'analyse du besoin jusqu'à la validation.</p>
+        <p>Cette approche me permet de relier les aspects théoriques de l'automatique et de l'ingénierie des systèmes à des problématiques concrètes d'intégration, de conception et de mise en œuvre.</p>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h3 class="sub-head">Outils & compétences techniques</h3>
+
+      <div class="skill-group">
+        <p class="sg-label">PROGRAMMATION</p>
+        <div class="chips">
+          <span class="chip">C++</span>
+          <span class="chip">C</span>
+          <span class="chip">Java</span>
+          <span class="chip">Python</span>
+          <span class="chip">MATLAB</span>
+          <span class="chip">VHDL</span>
+          <span class="chip">ARM Assembly</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="sg-label">LOGICIELS & ENVIRONNEMENTS</p>
+        <div class="chips">
+          <span class="chip">AutoCAD</span>
+          <span class="chip">Altair HyperWorks</span>
+          <span class="chip">Simulink</span>
+          <span class="chip">Eclipse</span>
+          <span class="chip">STM32CubeIDE</span>
+          <span class="chip">Git</span>
+          <span class="chip">VSCode</span>
+          <span class="chip">Overleaf</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="sg-label">SYSTÈMES & BUREAUTIQUE</p>
+        <div class="chips">
+          <span class="chip">Windows 10</span>
+          <span class="chip">Linux</span>
+          <span class="chip">MS Word</span>
+          <span class="chip">PowerPoint</span>
+          <span class="chip">Excel</span>
+          <span class="chip">Teams</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="sg-label">COMPÉTENCES TRANSVERSES & CERTIFICATIONS</p>
+        <div class="chips">
+          <span class="chip">Gestion de projet en équipe</span>
+          <span class="chip">Travail d'équipe & résolution de problèmes</span>
+          <span class="chip">Permis de conduire valide</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h3 class="sub-head">Centres d'intérêt techniques</h3>
+      <div class="chips">
+        <span class="chip">Automatique</span>
+        <span class="chip">Contrôle-commande</span>
+        <span class="chip">Estimation</span>
+        <span class="chip">Robotique</span>
+        <span class="chip">Systèmes embarqués</span>
+        <span class="chip">Aéronautique</span>
+        <span class="chip">Systèmes spatiaux</span>
+        <span class="chip">Avionique</span>
+        <span class="chip">Structures</span>
+        <span class="chip">Simulation</span>
+        <span class="chip">Optimisation</span>
+        <span class="chip">Prototypage</span>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h3 class="sub-head">Centres d'intérêt personnels</h3>
+      <div class="chips">
+        <span class="chip">Expérience académique au Canada (2025 – 2027)</span>
+        <span class="chip">Presse internationale & romans</span>
+        <span class="chip">Ski</span>
+        <span class="chip">VTT</span>
+        <span class="chip">Voile</span>
+        <span class="chip">Course d'orientation</span>
+        <span class="chip">Jeu vidéo</span>
+        <span class="chip">Basse — depuis 2020</span>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h3 class="sub-head">Langues</h3>
+      <div class="languages-row">
+        <span><strong>Français</strong> — langue maternelle</span>
+        <span><strong>Anglais</strong> — niveau professionnel</span>
+        <span><strong>Espagnol</strong> — notions</span>
+      </div>
+    </div>
+
+  </section>
 
 </main>
 
 <footer>
-    <p>© 2026 Romain Fabrègue</p>
+  <div class="wrap footer-grid">
+    <div class="footer-left">
+      <span>© 2026 Romain Fabrègue</span>
+      <span>Montréal, Canada</span>
+    </div>
+    <div class="footer-contact">
+      <a href="mailto:romain.fabregue@gmail.com">romain.fabregue@gmail.com</a>
+      <a href="tel:+33769266529">+33 7 69 26 65 29</a>
+      <a href="https://www.linkedin.com/in/romain-fabr%C3%A8gue-9bba72295" class="ext">LinkedIn</a>
+    </div>
+  </div>
 </footer>
 
 </body>
